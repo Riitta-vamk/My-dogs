@@ -1,1 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact | Northbound</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">My Dogs</a><button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button><nav class="nav-links"><a href="index.html">Home</a><a href="journal.html">Journal</a><a href="destinations.html">Places</a><a href="stories.html">Stories</a><a href="gallery.html">Gallery</a><a class="active" href="contact.html">Contact</a></nav></div></header><main><section class="page-hero"><div class="container"><div class="eyebrow">Say hello</div><h1>Bring us a good question.</h1><p>Tell us what you are curious about, where you are headed, or what we should see next.</p></div></section><section class="section"><div class="container split"><form class="form" onsubmit="event.preventDefault(); document.querySelector('#form-message').textContent='Thanks. Your note is ready for the road.'"><label for="name">Your name<input id="name" name="name" required></label><label for="email">Email address<input id="email" name="email" type="email" required></label><label for="message">Your note<textarea id="message" name="message" required></textarea></label><button class="button" type="submit">Send note</button><p id="form-message" class="text-muted" aria-live="polite"></p></form><div><img src="Sancho ja Teppo.jpg" alt="Sancho and Teppo relaxing together"><div class="quote">Take the long way. It is usually where the good story starts.</div></div></div></section></main><footer class="site-footer"><div class="container footer-wrap"><span>Northbound Journal &copy; <span data-year></span></span><a href="index.html">Back to the beginning &rarr;</a></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ota yhteyttä | Omat koirat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Omat koirat</a>
+      <button class="nav-toggle" aria-label="Avaa navigaatio" aria-expanded="false">&#9776;</button>
+      <nav class="nav-links">
+        <a href="index.html">Koti</a>
+        <a href="gallery.html">Galleria</a>
+        <a href="stories.html">Tarinat</a>
+        <a href="journal.html">Päiväkirja</a>
+        <a href="destinations.html">Paikat</a>
+        <a href="contact.html" class="active">Ota yhteyttä</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Ota yhteyttä</h1>
+        <p>Haluaisitko lähettää palautetta tai kysymystä? Ota meihin yhteyttä alla olevan lomakkeen avulla.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-grid">
+          <div>
+            <h2>Lähetä viesti</h2>
+            <form class="form">
+              <label>
+                Nimi
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                Sähköposti
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                Aihe
+                <input type="text" name="subject" required>
+              </label>
+              <label>
+                Viesti
+                <textarea name="message" required></textarea>
+              </label>
+              <button class="button" type="submit">Lähetä</button>
+            </form>
+          </div>
+          <div>
+            <h3>Yhteystiedot</h3>
+            <p>Saatat myös ottaa meihin yhteyttä suoraan sähköpostilla tai soittaa puhelimella.</p>
+            <p>
+              <strong>Sähköposti:</strong><br>
+              info@omatkoirat.fi
+            </p>
+            <p>
+              <strong>Puhelin:</strong><br>
+              +358 40 123 4567
+            </p>
+            <p>
+              <strong>Osoite:</strong><br>
+              Koirakaari 1<br>
+              12345 Koirakaupunki<br>
+              Suomi
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-title">Omat koirat</div>
+        <span>Koirista kertominen passion.</span>
+      </div>
+      <div>
+        <div class="footer-label">Tutustu</div>
+        <div class="footer-links">
+          <a href="gallery.html">Galleria</a>
+          <a href="stories.html">Tarinat</a>
+          <a href="journal.html">Päiväkirja</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-label">Lisää</div>
+        <div class="footer-links">
+          <a href="destinations.html">Paikat</a>
+          <a href="contact.html">Ota yhteyttä</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>
