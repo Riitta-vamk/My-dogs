@@ -231,16 +231,56 @@ h3 {
   gap: 28px;
 }
 
-.my-dogs-extra {
-  margin-top: 52px;
+.masonry-grid {
+  column-count: 3;
+  column-gap: 22px;
+  margin-top: 16px;
 }
 
-.masonry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  grid-auto-rows: auto;
-  grid-auto-flow: dense;
+.masonry-grid .dog-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 22px;
+  break-inside: avoid;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 24px rgba(23, 33, 43, 0.05);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+.masonry-grid .dog-card:nth-child(3n + 1) {
+  transform: translateY(12px);
+}
+
+.masonry-grid .dog-card:nth-child(3n + 2) {
+  transform: translateY(-8px);
+}
+
+.masonry-grid .dog-card:nth-child(3n + 3) {
+  transform: translateY(16px);
+}
+
+.masonry-grid .dog-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 18px 28px rgba(23, 33, 43, 0.12);
+  filter: saturate(1.08);
+}
+
+.masonry-grid .dog-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+.masonry-grid .dog-card figcaption {
+  padding: 16px 14px;
+  font-weight: 700;
+  color: var(--night);
+  text-align: center;
+  background: var(--white);
 }
 
 .dog-card {
@@ -249,22 +289,11 @@ h3 {
   background: var(--white);
   border: 1px solid var(--line);
   box-shadow: 0 12px 24px rgba(23, 33, 43, 0.05);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.dog-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 28px rgba(23, 33, 43, 0.08);
-}
-
-.dog-card:nth-child(2),
-.dog-card:nth-child(5) {
-  grid-column: span 2;
 }
 
 .dog-card img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
 }
 
@@ -273,7 +302,6 @@ h3 {
   font-weight: 700;
   color: var(--night);
   text-align: center;
-  background: var(--white);
 }
 
 .table-wrap {
@@ -475,14 +503,15 @@ h3 {
   }
 
   .masonry-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .dog-card:nth-child(2),
-  .dog-card:nth-child(5) {
-    grid-column: span 1;
+    column-count: 2;
   }
 
   .hero { min-height: 500px; }
   .section { padding: 64px 0; }
+}
+
+@media (max-width: 560px) {
+  .masonry-grid {
+    column-count: 1;
+  }
 }
