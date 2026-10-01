@@ -232,40 +232,33 @@ h3 {
 }
 
 .masonry-grid {
-  column-count: 3;
-  column-gap: 22px;
-  margin-top: 16px;
+  column-count: 4;
+  column-gap: 16px;
+  margin-top: 18px;
 }
 
 .masonry-grid .dog-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   break-inside: avoid;
   overflow: hidden;
   border-radius: 18px;
   background: var(--white);
-  border: 1px solid var(--line);
-  box-shadow: 0 12px 24px rgba(23, 33, 43, 0.05);
-  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  border: 1px solid rgba(23, 33, 43, 0.06);
+  box-shadow: 0 10px 18px rgba(23, 33, 43, 0.04);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
 }
 
-.masonry-grid .dog-card:nth-child(3n + 1) {
-  transform: translateY(12px);
-}
-
-.masonry-grid .dog-card:nth-child(3n + 2) {
-  transform: translateY(-8px);
-}
-
-.masonry-grid .dog-card:nth-child(3n + 3) {
-  transform: translateY(16px);
-}
+.masonry-grid .dog-card:nth-child(4n + 1) { transform: translateY(10px); }
+.masonry-grid .dog-card:nth-child(4n + 2) { transform: translateY(-6px); }
+.masonry-grid .dog-card:nth-child(4n + 3) { transform: translateY(18px); }
+.masonry-grid .dog-card:nth-child(4n + 4) { transform: translateY(-2px); }
 
 .masonry-grid .dog-card:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 18px 28px rgba(23, 33, 43, 0.12);
-  filter: saturate(1.08);
+  box-shadow: 0 18px 28px rgba(23, 33, 43, 0.09);
+  filter: saturate(1.06);
 }
 
 .masonry-grid .dog-card img {
@@ -273,13 +266,17 @@ h3 {
   display: block;
   height: auto;
   object-fit: cover;
+  border-radius: 18px 18px 0 0;
 }
 
 .masonry-grid .dog-card figcaption {
-  padding: 16px 14px;
+  padding: 12px 12px 14px;
+  font-size: 0.76rem;
   font-weight: 700;
-  color: var(--night);
-  text-align: center;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
   background: var(--white);
 }
 
@@ -503,7 +500,7 @@ h3 {
   }
 
   .masonry-grid {
-    column-count: 2;
+    column-count: 3;
   }
 
   .hero { min-height: 500px; }
@@ -512,6 +509,6 @@ h3 {
 
 @media (max-width: 560px) {
   .masonry-grid {
-    column-count: 1;
+    column-count: 2;
   }
 }
