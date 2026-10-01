@@ -1,99 +1,43 @@
 <!doctype html>
-
 <html lang="fi">
-
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Omat koirat</title><link rel="stylesheet" href="styles.css"></head>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omat koirat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">Omat koirat</a>
+    <button class="nav-toggle" aria-label="Avaa navigaatio" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links">
+      <a href="#koirat">Koirat</a><a href="#resources">Resurssit</a><a href="#calculator">Laskuri</a><a href="#shop">Kauppa</a><a href="#opensource">Open Source</a>
+    </nav>
+  </div>
+</header>
 
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Omat koirat</a><button class="nav-toggle" aria-label="Avaa navigaatio" aria-expanded="false">&#9776;</button><nav class="nav-links"><a href="#koirat">Koirat</a><a href="#resources">Resurssit</a><a href="#calculator">Laskuri</a><a href="#shop">Kauppa</a><a href="#opensource">Open Source</a></nav></div></header>
-
-<main><section class="hero"><div class="container hero-copy"><div class="eyebrow">Kenttäopas uteliaalle</div><h1>Lähde sinne missä tie hiljentää.Päivitetty</h1><p class="lead">Pohjoiseen on hidas, mutta rauhallinen polku — juuri sellainen, josta kaikki hyvä alkaa.</p><a class="button" href="#koirat">Tapaa koirat</a></div></section>
+<main>
+<section class="hero"><div class="container hero-copy"><div class="eyebrow">Kenttäopas uteliaalle</div><h1>Lähde sinne missä tie hiljentää. Päivitetty</h1><p class="lead">Pohjoiseen on hidas, mutta rauhallinen polku — juuri sellainen, josta kaikki hyvä alkaa.</p><a class="button" href="#koirat">Tapaa koirat</a></div></section>
 
 <section class="section"><div class="container split"><div><div class="eyebrow">Viikonloppukutsu</div><h2>Muistiinpanot kartan reunalta.</h2><p class="text-muted">Joka toinen perjantai lähetämme kirjeen hyvästä suunnasta, rauhallisesta reitistä ja paikasta, jossa tuuli vaihtuu.</p></div><div class="callout">"Retki on aina parempi, kun tiedät, missä pitää pysähtyä."</div></div></section>
 
 <section class="section" style="padding-top:0"><div class="container"><div class="section-heading"><div class="eyebrow">Aloita tutkiminen</div><h2>Kolme tapaa sisään.</h2></div><div class="cards"><div class="card"><div class="card-icon">01</div><h3>Seuraa jälkiä</h3><p>Valitse retki, joka sopii koirasi energialle ja mielialalle.</p></div><div class="card"><div class="card-icon">02</div><h3>Maista rauhaa</h3><p>Pidä tauko, tarkista maisemat ja anna hetkelle aikaa.</p></div><div class="card"><div class="card-icon">03</div><h3>Jaa kokemukset</h3><p>Löydä yhteisiä kahlauspaikkoja, mukavia lepohetkiä ja pieniä seikkailuja.</p></div></div></div></section>
 
-<section class="section" id="koirat">
-    <div class="container">
+<section class="section" id="koirat"><div class="container"><div class="section-heading"><div class="eyebrow">Omat koirat</div><h2>Tapaa Teppo, Sancho ja Nala</h2><p>Jokainen hyvä retki tarvitsee luotettavia kumppaneita. Tässä ovat Teppo, Sancho ja Nala.</p></div><div class="dog-grid"><figure class="dog-card"><img src="Teppo.jpg" alt="Teppo"><figcaption>Teppo</figcaption></figure><figure class="dog-card"><img src="sancho.jpg" alt="Sancho"><figcaption>Sancho</figcaption></figure><figure class="dog-card"><img src="Nala.jpeg" alt="Nala"><figcaption>Nala</figcaption></figure></div></div></section>
 
-        <div class="section-heading">
-            <div class="eyebrow">Omat koirat</div>
+<section class="section" id="day-types"><div class="container"><div class="section-heading"><div class="eyebrow">Pieni suuntaviivasto</div><h2>Valitse seuraavan päiväsi tyyppi.</h2><p>Käytä tätä pikaopasta löytääksesi koirallesi sopivan päivän.</p></div><div class="table-wrap"><table class="trip-table"><caption class="visually-hidden">Koirapäivän tyypit ja sopivat aktiviteetit</caption><thead><tr><th>Päivän tyyppi</th><th>Sopii koiralle</th><th>Tekemistä</th><th>Muista mukaan</th></tr></thead><tbody><tr><td><strong>Rauhallinen päivä</strong></td><td>Väsyneelle tai seniorikoiralle</td><td>Lyhyt kävely, lepo ja nuuskuttelu</td><td>Vettä ja pehmeä alusta</td></tr><tr><td><strong>Toiminnallinen päivä</strong></td><td>Virkeälle ja leikkisälle koiralle</td><td>Pidempi lenkki, leikit ja harjoittelu</td><td>Herkkuja ja lelu</td></tr><tr><td><strong>Seikkailupäivä</strong></td><td>Uteliaalle ja aktiiviselle koiralle</td><td>Uusi polku, metsäretki tai ranta</td><td>Vettä, hihna ja ensiapupakkaus</td></tr></tbody></table></div></div></section>
 
-            <h2>Tapaa Teppo, Sancho ja Nala</h2>
+<section class="section" id="resources"><div class="container"><div class="section-heading"><div class="eyebrow">Lisää tietoa</div><h2>Löydä kaikkea koirista</h2><p>Tutustu resursseihin koirien hyvinvoinnista ja retkiaktiviteeteista.</p></div><ul class="resource-list"><li><a href="#">Koirien ravitsemus</a></li><li><a href="#">Retkivälineet</a></li><li><a href="#">Koiran koulutus</a></li><li><a href="#">Loma-ajan suunnittelu</a></li></ul></div></section>
 
-            <p>
-                Jokainen hyvä retki tarvitsee luotettavia kumppaneita.
-                Tässä ovat Teppo, Sancho ja Nala.
-            </p>
-        </div>
+<section class="section" id="calculator"><div class="container"><div class="section-heading"><div class="eyebrow">Koirakoulu</div><h2>Koiranruuan kustannuslaskuri</h2><p>Laske koirasi kuukausittaiset ruokakustannukset.</p></div><div class="calculator-layout"><div class="calc-form"><div class="calc-group"><label for="dogWeight">Koiran paino (kg):</label><input type="number" id="dogWeight" value="25" min="1" max="100"></div><div class="calc-group"><label for="foodPerKg">Ruokamäärä (g/kg/päivä):</label><input type="number" id="foodPerKg" value="30" min="10" max="100"></div><div class="calc-group"><label for="bagSize">Pussin koko (kg):</label><input type="number" id="bagSize" value="15" min="1" max="50" step="0.5"></div><div class="calc-group"><label for="bagPrice">Pussin hinta (€):</label><input type="number" id="bagPrice" value="28" min="1" max="200" step="0.5"></div><button class="button button-calc" onclick="calculateFoodCost()">Laske kustannukset</button></div><div class="calculator-summary"><div class="calc-results" id="results"><div class="result-item"><span class="label">Päivittäinen määrä:</span><span class="value"><strong id="dailyAmount">-</strong> g</span></div><div class="result-item"><span class="label">Kuukausittainen määrä:</span><span class="value"><strong id="monthlyAmount">-</strong> kg</span></div><div class="result-item"><span class="label">Pusseja kuukaudessa:</span><span class="value"><strong id="bagsPerMonth">-</strong> kpl</span></div><div class="result-item highlight"><span class="label">Kuukausittaiset kustannukset:</span><span class="value"><strong id="monthlyCost">-</strong> €</span></div><div class="result-item highlight"><span class="label">Vuosittaiset kustannukset:</span><span class="value"><strong id="yearlyCost">-</strong> €</span></div></div></div></div></div></section>
 
-        <div class="dog-grid">
+<section class="section" id="shop"><div class="container"><div class="section-heading"><div class="eyebrow">Kauppa</div><h2>Valmiit ruokavalinnat koirallesi</h2><p>Esimerkkituotteet helpottavat valintaa.</p></div><div class="shop-grid"><div class="shop-card"><h3>Pieni retki</h3><p>Tasapainoinen valinta arkeen.</p><span>36 €</span></div><div class="shop-card"><h3>Aktivointi</h3><p>Lisätarpeita aktiivisille koirille.</p><span>48 €</span></div><div class="shop-card"><h3>Seniori</h3><p>Herkkä valinta vanhemmille koirille.</p><span>31 €</span></div></div></div></section>
 
-            <figure class="dog-card">
-                <img src="Teppo.jpg" alt="Teppo">
-                <figcaption>Teppo</figcaption>
-            </figure>
-
-            <figure class="dog-card">
-                <img src="sancho.jpg" alt="Sancho">
-                <figcaption>Sancho</figcaption>
-            </figure>
-
-            <figure class="dog-card">
-                <img src="Nala.jpeg" alt="Nala">
-                <figcaption>Nala</figcaption>
-            </figure>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="section"><div class="container"><div class="section-heading"><div class="eyebrow">Pieni suuntaviivasto</div><h2>Valitse seuraavan päiväsi tyyppi.</h2><p>Käytä tätä pikaopasta löytääksesi sopivan retken.</p></div><div class="guide-grid"><div class="guide-item"><h3>Rauhallinen</h3><p>Lyhyet reitit, kiva lämpö ja paljon taukoja.</p></div><div class="guide-item"><h3>Toiminnallinen</h3><p>Havainnointihetkiä, juoksevaa puistoa ja aktiivista yhdessäoloa.</p></div><div class="guide-item"><h3>Seikkailullinen</h3><p>Uusia polkuja, eloisia rantoja ja muutama ylimääräinen tunti ulkona.</p></div></div></div></section>
-
-<section class="section" id="resources"><div class="container"><div class="section-heading"><div class="eyebrow">Lisää tietoa</div><h2>Löydä kaikkea koirista</h2><p>Tutustu laajaan resursseihin koirien hyvinvoinnista ja retkiaktiviteeteista.</p></div><ul class="resource-list"><li><a href="#">Koirien ravitsemus</a></li><li><a href="#">Retkivalineet</a></li><li><a href="#">Koiran koulutus</a></li><li><a href="#">Loma-ajan suunnittelu</a></li></ul></div></section>
-
-<section class="section" id="calculator"><div class="container"><div class="section-heading"><div class="eyebrow">Koirakoulu</div><h2>Koiranruuan kustannuslaskuri</h2><p>Laske koirasi kuukausittaiset ruokakustannukset.</p></div>
-
-<div class="calculator-layout">
-  <div class="calc-form">
-    <div class="calc-group"><label for="dogWeight">Koiran paino (kg):</label><input type="number" id="dogWeight" placeholder="esim. 25" value="25" min="1" max="100"></div>
-    <div class="calc-group"><label for="foodPerKg">Ruokamäärä (g/kg/päivä):</label><input type="number" id="foodPerKg" placeholder="esim. 30" value="30" min="10" max="100" step="1"></div>
-    <div class="calc-group"><label for="bagSize">Pussin koko (kg):</label><input type="number" id="bagSize" placeholder="esim. 15" value="15" min="1" max="50" step="0.5"></div>
-    <div class="calc-group"><label for="bagPrice">Pussin hinta (€):</label><input type="number" id="bagPrice" placeholder="esim. 28" value="28" min="1" max="200" step="0.5"></div>
-    <button class="button button-calc" onclick="calculateFoodCost()">Laske kustannukset</button>
-  </div>
-
-  <div class="calculator-summary">
-    <div class="calc-results" id="results">
-      <div class="result-item"><span class="label">Päivittäinen määrä:</span><span class="value"><strong id="dailyAmount">-</strong> g</span></div>
-      <div class="result-item"><span class="label">Kuukausittainen määrä:</span><span class="value"><strong id="monthlyAmount">-</strong> kg</span></div>
-      <div class="result-item"><span class="label">Pusseja kuukaudessa:</span><span class="value"><strong id="bagsPerMonth">-</strong> kpl</span></div>
-      <div class="result-item highlight"><span class="label">Kuukausittaiset kustannukset:</span><span class="value"><strong id="monthlyCost">-</strong> €</span></div>
-      <div class="result-item highlight"><span class="label">Vuosittaiset kustannukset:</span><span class="value"><strong id="yearlyCost">-</strong> €</span></div>
-    </div>
-  </div>
-</div>
-
-<div class="food-product-list">
-  <div class="product-item"><div class="product-name">Koiran peruskuivaruoka</div><div class="product-meta">15 kg · 27 €</div><div class="product-detail">Hyvä vaivaton valinta arkeen.</div></div>
-  <div class="product-item"><div class="product-name">Herkkä koiranruoka</div><div class="product-meta">12 kg · 24 €</div><div class="product-detail">Sopii herkkäihoisille koirille.</div></div>
-  <div class="product-item"><div class="product-name">Sporttinen kuivaruoka</div><div class="product-meta">20 kg · 35 €</div><div class="product-detail">Pitkäkestoinen valinta aktiivisille koirille.</div></div>
-  <div class="product-item"><div class="product-name">Koiran seniori</div><div class="product-meta">10 kg · 22 €</div><div class="product-detail">Tarkoitettu aikuisille ja seniorikoirille.</div></div>
-</div>
-
-</div></section>
-
-<section class="section" id="shop"><div class="container"><div class="section-heading"><div class="eyebrow">Kauppa</div><h2>Valmiit ruokavalinnat koirallesi</h2><p>Esimerkkituotteet helpottavat valintaa ja antavat hyvän lähtökohdan.</p></div><div class="shop-grid"><div class="shop-card"><h3>Pieni retki</h3><p>Koostuu tasapainoisesta kuiva- ja kosteasta ruoasta.</p><span>36 €</span></div><div class="shop-card"><h3>Aktivointi</h3><p>Lisätarpeita aktiivisille koirille ja pitkille retkille.</p><span>48 €</span></div><div class="shop-card"><h3>Seniori</h3><p>Helppo sulava ja herkkä valinta vanhemmille koirille.</p><span>31 €</span></div></div></div></section>
-
-<section class="section" id="opensource"><div class="container"><div class="section-heading"><div class="eyebrow">Open Source</div><h2>Löydä koirat ja kuvat GitHubissa</h2><p>Kaikki koirien kuvat ja verkkosivun lähdekoodi ovat saatavilla avoimen lähdekoodin projektina.</p></div><div class="opensource-content"><div class="opensource-item"><h3>GitHub-säiliö</h3><p>Käy GitHubissa nähdäksesi koko projektin, mukaan lukien kaikki koirien kuvat ja sivun koodi.</p><a class="button" href="https://github.com/Riitta-vamk/My-dogs" target="_blank">Avaa GitHub</a></div><div class="opensource-item"><h3>Kaikki koirakuvat</h3><p>Lataa kaikki korkealaatuiset kuvat Tepposta, Sanchosta ja Nalasta GitHubista.</p><a class="button" href="https://github.com/Riitta-vamk/My-dogs/tree/main-dogs" target="_blank">Selaa kuvia</a></div><div class="opensource-item"><h3>Lähdekoodi</h3><p>Tutustu HTML-, CSS- ja JavaScript-tiedostoihin ja käytä niitä omissa projekteissasi.</p><a class="button" href="https://github.com/Riitta-vamk/My-dogs/blob/main-dogs/index.html" target="_blank">Näytä koodi</a></div></div></div></section>
-
-<section class="section"><div class="container"><div class="section-heading"><div class="eyebrow">Tule mukaan</div><h2>Haluat osallistua?</h2><p>Lähetä meille sähköpostia ja kerro, miten voisimme tehdä retkistä vielä parempaa.</p><a class="button" href="mailto:hello@example.com">Ota yhteyttä</a></div></div></section>
-
+<section class="section" id="opensource"><div class="container"><div class="section-heading"><div class="eyebrow">Open Source</div><h2>Löydä koirat ja kuvat GitHubissa</h2><p>Kaikki koirien kuvat ja verkkosivun lähdekoodi ovat saatavilla avoimen lähdekoodin projektina.</p></div><div class="cards"><div class="card"><div class="card-content"><h3>GitHub-säiliö</h3><p>Koko projekti ja kaikki koirien kuvat.</p><a class="button" href="https://github.com/Riitta-vamk/My-dogs" target="_blank" rel="noopener">Avaa GitHub</a></div></div><div class="card"><div class="card-content"><h3>Kaikki kuvat</h3><p>Selaa projektin kuva- ja lähdetiedostoja.</p><a class="button" href="https://github.com/Riitta-vamk/My-dogs/tree/main-dogs" target="_blank" rel="noopener">Selaa tiedostoja</a></div></div></div></div></section>
 </main>
 
-<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-title">Omat koirat</div><span>Tehty uteliaalle.</span></div><div><div class="footer-label">Tutustu</div><div class="footer-links"><a href="#koirat">Koirat</a><a href="#resources">Resurssit</a><a href="#calculator">Laskuri</a><a href="#opensource">Open Source</a></div></div><div><div class="footer-label">Yhteys</div><div class="footer-links"><a href="mailto:hello@example.com">hello@example.com</a><a href="#">Instagram</a><a href="https://github.com/Riitta-vamk/My-dogs" target="_blank">GitHub</a></div></div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-title">Omat koirat</div><span>Tehty uteliaalle.</span></div><div><div class="footer-label">Tutustu</div><div class="footer-links"><a href="#koirat">Koirat</a><a href="#day-types">Päivän tyyppi</a><a href="#calculator">Laskuri</a><a href="#opensource">Open Source</a></div></div><div><div class="footer-label">Yhteys</div><div class="footer-links"><a href="https://github.com/Riitta-vamk/My-dogs" target="_blank" rel="noopener">GitHub</a></div></div></div></footer>
 
 <script>
 function calculateFoodCost() {
@@ -101,39 +45,20 @@ function calculateFoodCost() {
   const foodPerKg = parseFloat(document.getElementById('foodPerKg').value);
   const bagSize = parseFloat(document.getElementById('bagSize').value);
   const bagPrice = parseFloat(document.getElementById('bagPrice').value);
-
-  if (isNaN(dogWeight) || isNaN(foodPerKg) || isNaN(bagSize) || isNaN(bagPrice) || dogWeight <= 0 || foodPerKg <= 0 || bagSize <= 0 || bagPrice <= 0) {
-    alert('Syötä kelvolliset arvot!');
-    return;
-  }
-
-  const dailyGrams = dogWeight * foodPerKg;
-  const dailyKg = dailyGrams / 1000;
-  const monthlyKg = dailyKg * 30;
+  if ([dogWeight, foodPerKg, bagSize, bagPrice].some(value => !Number.isFinite(value) || value <= 0)) { alert('Syötä kelvolliset arvot!'); return; }
+  const monthlyKg = dogWeight * foodPerKg * 30 / 1000;
   const bagsPerMonth = monthlyKg / bagSize;
   const monthlyCost = bagsPerMonth * bagPrice;
-  const yearlyCost = monthlyCost * 12;
-
-  document.getElementById('dailyAmount').textContent = dailyGrams.toFixed(0);
+  document.getElementById('dailyAmount').textContent = (dogWeight * foodPerKg).toFixed(0);
   document.getElementById('monthlyAmount').textContent = monthlyKg.toFixed(1);
   document.getElementById('bagsPerMonth').textContent = bagsPerMonth.toFixed(2);
   document.getElementById('monthlyCost').textContent = monthlyCost.toFixed(2);
-  document.getElementById('yearlyCost').textContent = yearlyCost.toFixed(2);
-
+  document.getElementById('yearlyCost').textContent = (monthlyCost * 12).toFixed(2);
   document.getElementById('results').style.display = 'grid';
 }
-
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', function() {
-    navLinks.classList.toggle('open');
-    this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-  });
-}
+if (navToggle && navLinks) navToggle.addEventListener('click', function () { navLinks.classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'); });
 </script>
-
 </body>
-
 </html>
