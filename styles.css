@@ -235,6 +235,14 @@ h3 {
   margin-top: 52px;
 }
 
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+}
+
 .dog-card {
   overflow: hidden;
   border-radius: 18px;
@@ -249,9 +257,14 @@ h3 {
   box-shadow: 0 16px 28px rgba(23, 33, 43, 0.08);
 }
 
+.dog-card:nth-child(2),
+.dog-card:nth-child(5) {
+  grid-column: span 2;
+}
+
 .dog-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -260,6 +273,7 @@ h3 {
   font-weight: 700;
   color: var(--night);
   text-align: center;
+  background: var(--white);
 }
 
 .table-wrap {
@@ -458,6 +472,15 @@ h3 {
   .footer-grid,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .masonry-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .dog-card:nth-child(2),
+  .dog-card:nth-child(5) {
+    grid-column: span 1;
   }
 
   .hero { min-height: 500px; }
